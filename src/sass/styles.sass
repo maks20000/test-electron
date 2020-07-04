@@ -204,11 +204,11 @@ header
             width: 100%
             
 .photos-block
-    padding: 1rem $main-padding
+    padding: 1rem $main-padding 0
     +shadow()
     img 
         width: 100%
-        margin-bottom: 1rem
+        margin-bottom: $main-padding
 
 .comments
     padding: $main-padding 0
@@ -326,7 +326,6 @@ footer
             width: 100%
             text-align: center
             margin: 0
-            margin-bottom: -1rem
             &::-webkit-scrollbar
                 width: 0
             div 
@@ -342,18 +341,3 @@ footer
                     padding-right: 0
         img 
             margin-bottom: 0
-    
-    
-    
-.test-p
-    .test
-        position: relative
-        overflow: hidden
-        overflow-x: scroll
-        background: yellow
-        white-space: nowrap
-        width: 100%
-        div
-            display: inline-block
-            vertical-align: top
-            width: 500px
