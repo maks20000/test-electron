@@ -30,7 +30,7 @@ $border-light: #EEEEEE
     border-bottom: 1px solid #EEEEEE
 
 =shadow () 
-    box-shadow: 0px 7px 11px 0px $border-light
+    box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08)
     border: 1px solid $border-light
 
 
@@ -39,10 +39,14 @@ $border-light: #EEEEEE
 
 .bold 
     font-weight: bold
-    padding-bottom: 0.8rem
+    padding-bottom: 0.5rem
 
 .title 
-    font-size: 16px
+    font-size: 18px
+
+p 
+    letter-spacing: -0.8px
+    margin-bottom: 0.9rem
 
 body 
     margin: 0
@@ -100,7 +104,7 @@ header
                 right: 15px
         .user-menu
             position: absolute
-            top: 150%
+            top: 68px
             right: 15px
             padding: 0.8rem 0 0.8rem 0
             border-radius: 3px
@@ -215,8 +219,8 @@ header
     .comment-item
         position: relative
         +shadow()
-        padding: $main-padding
-        margin-bottom: 2.5rem
+        padding: $main-padding $main-padding 1.6rem
+        margin-bottom: $main-padding
         .comment-user
             margin-bottom: 1rem
             display: flex
@@ -227,6 +231,8 @@ header
             .date
                 color: $font-light
                 display: block
+        .text 
+            letter-spacing: -0.5px
         .close 
             +set-bg-contain(url("../img/delete.png"))
             position: absolute
@@ -241,7 +247,7 @@ header
     padding-bottom: $main-padding
     input
         +shadow ()
-        padding: 13px 15px 13px 20px
+        padding: 10px 15px 10px 20px
         box-sizing: border-box
         width: 100%
         margin-bottom: 1rem
@@ -254,7 +260,7 @@ header
         padding: 13px 15px 13px 20px
         box-sizing: border-box
         width: 100%
-        margin-bottom: 2rem
+        margin-bottom: 1.5rem
         border-radius: 2px
         font-family: $font-name
         color: $font-light
@@ -264,7 +270,7 @@ header
             color: $font-light
     button 
         +set-bg-main()
-        padding: 0.5rem 2rem
+        padding: 0.5rem 2.5rem
         border: 0px
         border-radius: 2px
         color: white

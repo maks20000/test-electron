@@ -6,17 +6,20 @@ if (user == null) {
 }
 if (user.status!="" && typeof user["status"]!=="undefined") setStatus(user.status)
 
+//функция для установки статуса в DOM
 function setStatus (value) {
     var new_status = value.replace(/<\/?[a-zA-Z]+>/gi,'');
     user.status=new_status;
     status.innerHTML=new_status;
 }
 
+//функция для сохранения объекта в localStorage
 function saveObj_localStorage (key,obj) {
     var json = JSON.stringify(obj);
     localStorage.setItem(key,json);
 }
 
+//подготавливаем форму для изменения статуса
 var clicked = false;
 let ch_status_el = document.createElement ("div");
 ch_status_el.classList.add("change_status");
@@ -43,18 +46,20 @@ ch_status_input.addEventListener("keydown", (e)=>{
     }
 })
 
+//функция изменения статуса
 function change_status () {
     var new_status = ch_status_input.value.trim();
-    if (new_status!="") {
-        setStatus(new_status);
-        saveObj_localStorage("user_"+user_id, user);
+    if (new_status=="") {
+        new_status="изменить статус"
     }
+    setStatus(new_status);
+    saveObj_localStorage("user_"+user_id, user);
     let title = document.querySelector(".user-title");
     title.removeChild(document.querySelector(".user-title .change_status"))
     clicked=false;
 }
 
-
+//открыть меню пользователя
 document.querySelector("#user-header").addEventListener("click", (e)=>{
     document.querySelector("#user-header").classList.toggle("open")
 })

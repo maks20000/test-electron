@@ -3,10 +3,14 @@
 
 .bold {
   font-weight: bold;
-  padding-bottom: 0.8rem; }
+  padding-bottom: 0.5rem; }
 
 .title {
-  font-size: 16px; }
+  font-size: 18px; }
+
+p {
+  letter-spacing: -0.8px;
+  margin-bottom: 0.9rem; }
 
 body {
   margin: 0;
@@ -88,7 +92,7 @@ header {
         right: 15px; }
     header .user-top .user-menu {
       position: absolute;
-      top: 150%;
+      top: 68px;
       right: 15px;
       padding: 0.8rem 0 0.8rem 0;
       -webkit-border-radius: 3px;
@@ -139,8 +143,8 @@ header {
   padding-bottom: 2rem; }
   .user-info-block .user-info {
     padding: 0 1rem 0 1.5rem;
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE;
     height: 100%;
     -webkit-box-sizing: content-box;
@@ -189,8 +193,8 @@ header {
   .user-info-block .user-avatar {
     padding: 2rem;
     max-width: 380px;
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE;
     display: inline-block;
     height: auto; }
@@ -199,8 +203,8 @@ header {
 
 .photos-block {
   padding: 1rem 2rem 0;
-  -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-          box-shadow: 0px 7px 11px 0px #EEEEEE;
+  -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
   border: 1px solid #EEEEEE; }
   .photos-block img {
     width: 100%;
@@ -210,11 +214,11 @@ header {
   padding: 2rem 0; }
   .comments .comment-item {
     position: relative;
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE;
-    padding: 2rem;
-    margin-bottom: 2.5rem; }
+    padding: 2rem 2rem 1.6rem;
+    margin-bottom: 2rem; }
     .comments .comment-item .comment-user {
       margin-bottom: 1rem;
       display: -webkit-box;
@@ -231,6 +235,8 @@ header {
       .comments .comment-item .comment-user .date {
         color: #999999;
         display: block; }
+    .comments .comment-item .text {
+      letter-spacing: -0.5px; }
     .comments .comment-item .close {
       background: url("../img/delete.png") no-repeat center;
       background-size: contain;
@@ -247,10 +253,10 @@ header {
   font-size: 14px;
   padding-bottom: 2rem; }
   .add-comment input, .change_status input {
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE;
-    padding: 13px 15px 13px 20px;
+    padding: 10px 15px 10px 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
@@ -269,14 +275,14 @@ header {
     .add-comment input::placeholder, .change_status input::placeholder {
       color: #999999; }
   .add-comment textarea, .change_status textarea {
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE;
     padding: 13px 15px 13px 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     -webkit-border-radius: 2px;
             border-radius: 2px;
     font-family: "Ubuntu";
@@ -295,7 +301,7 @@ header {
       color: #999999; }
   .add-comment button, .change_status button {
     background: #278ECE;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2.5rem;
     border: 0px;
     -webkit-border-radius: 2px;
             border-radius: 2px;
@@ -308,13 +314,13 @@ footer {
 
 .change_status {
   padding: 2rem;
-  -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-          box-shadow: 0px 7px 11px 0px #EEEEEE;
+  -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
   border: 1px solid #EEEEEE;
   margin-top: 10px; }
   .change_status input {
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE;
     padding: 10px 15px 10px 20px; }
 
@@ -345,8 +351,8 @@ footer {
     padding: 1rem 2rem 2rem 2rem;
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: 0px 7px 11px 0px #EEEEEE;
-            box-shadow: 0px 7px 11px 0px #EEEEEE;
+    -webkit-box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 11px 27px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid #EEEEEE; }
     .photos-block .mobile-scroll {
       padding: 0;
